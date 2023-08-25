@@ -1,0 +1,497 @@
+
+.w-box {
+    position: relative;
+    max-width: 1000px;
+    height: fit-content;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.w-box .d-box {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.w-box .d-box h5 {
+    font-family: "Swashington";
+    color:var(--color-primary);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 135.714% */
+    margin: 14px 0;
+}
+.w-box .d-box .img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: var(--bg-pre);
+}
+.w-box .d-box .img img {
+    width: 100%;
+    height: auto;
+    display: block;
+ 
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+.w-box .d-box p {
+    color: var(--color-text);
+    font-family: "MontserratLight";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px; /* 150% */
+}
+.w-box .d-box .btn-gr {
+    display: flex;
+}
+.w-box .d-box .btn-gr button,
+.w-box .d-box .btn-gr a {
+    
+    font-family: "MontserratLight";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 133.333% */
+    
+    padding: 12px 16px;
+    border-radius: 360px;
+    border:1px solid gray;
+
+    display:flex;
+    align-items: center;
+}
+.w-box .d-box .btn-gr button > svg,
+.w-box .d-box .btn-gr a > svg {
+    margin-right: 10px;
+}
+.w-box .d-box .btn-gr a:nth-child(1) {
+    margin-right: 1rem;
+    background-color: var(--color-primary)!important;
+    color:white !important;
+}
+
+
+
+
+
+.w-gallery {
+    position: relative;
+
+    width: 100%;
+    height: fit-content;
+}
+.d-gallery {
+  
+    max-width: 1400px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:30px;
+    padding: 0 30px;
+}
+.d-gallery > .item-gallery:nth-child(n) {
+    height: 470px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-size: cover;
+   
+
+}
+
+.d-gallery > .item-gallery:nth-child(1) {
+    width: 33%;
+    background-image: url('../../public/tuananh/gl-1.jpg');
+}
+.d-gallery > .item-gallery:nth-child(2) {
+    width: 63%;
+    background-image: url('../../public/tuananh/gl-2.jpg');
+    background-position: 100% center;
+}
+.d-gallery > .item-gallery:nth-child(3) {
+    width: 47%;
+    background-image: url('../../public/tuananh/gl-3.jpg');
+    background-position: center;
+}
+
+.d-gallery > .item-gallery:nth-child(4) {
+    width: 50%;
+    background-image: url('../../public/tuananh/gl-4.jpg');
+    background-position: center;
+}
+
+
+
+.w-price {
+    position: relative;
+    width: 100%;
+}
+.w-price .heading {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+.patten-flow {
+    position: relative;
+    display: flex;
+   
+    justify-content: center;
+    align-items: self-end;
+
+}
+.patten-flow svg {
+    height: 20px;
+}
+.patten-flow > img.flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.patten-flow > img:nth-child(1) {
+    margin-right:20px;
+}
+.patten-flow > img:nth-child(3) {
+    margin-left:20px;
+}
+.w-price .heading h2 {
+    color: var(--color-text);
+    text-align: center;
+
+    font-family: "Swashington";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:170%;
+
+   margin:0;
+
+}
+.w-price .heading p {
+    color: var(--color-text);
+    text-align: center;
+
+    font-family: "MontserratLight";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 150%;
+  
+}
+.w-price .heading .underline {
+    display: block;
+    width: 420px;
+    margin:0 auto;
+    height: 2px;
+    background: linear-gradient(135deg, #F9B29E 0%, #FEF4B7 52.60%, #F7A7B4 100%);
+}
+.w-price .detail {
+    width: 100%;
+    height: fit-content;
+  
+}
+.w-price .detail .gr-option {
+    max-width: 1000px;
+    height: fit-content;
+    margin:  0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.w-price .detail .gr-option button {
+    color: var(--color-primary);
+    font-family: "Swashington";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+
+    outline: none;
+    border:none;
+    background: unset;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    padding: 10px 5px;
+    margin: 0 20px;
+    
+}
+.w-price .detail > button {
+    font-family: "MontserratLight";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 133.333% */
+    
+    padding: 12px 16px;
+    border-radius: 360px;
+    border:1px solid gray;
+    position:relative;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    background:var(--color-primary);
+    color:white;
+    
+}   
+.w-price .detail > button svg {
+    margin-right: 10px;
+}
+.w-price .detail .gr-option button.active::after {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-100%);
+    background: var(--color-primary);
+    overflow:hidden;
+}
+.w-price .detail .info {
+    max-width: 1345px;
+    height:fit-content;
+    position: relative;
+    overflow: hidden;
+    margin: 40px auto;
+
+}
+.w-price .detail .info > div:nth-child(n) {
+  
+    height: fit-content;
+    margin: 0 auto;
+ 
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+
+}
+.w-price .detail .info > div:nth-child(n) img {
+    width: 100%;
+    height: auto;
+}
+.w-price .detail .info > div.active:nth-child(n) {
+    opacity: 1!important;
+    visibility: visible !important;
+}
+.sd.w-price .detail .info > div:nth-child(n) img{
+    width:  100%;
+    height: auto;
+}
+
+
+
+
+.w-contvsfoot {
+    width: 100%;
+    height:fit-content;
+    background-image: url('../../public/tuananh/bg-footer.svg');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.w-contvsfoot .d-form {
+    max-width: 800px;
+    height: fit-content;
+    padding: 50px;
+    background-color: white;
+
+    border-radius: 16px;
+    margin: 200px auto;
+    box-shadow: 0px 24px 48px 0px rgba(251, 181, 85, 0.45);
+
+}
+.w-contvsfoot .d-form h2 {
+    color: var(--color-text);
+    text-align: center;
+
+    font-family: "Swashington";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.w-contvsfoot .d-form form {
+    max-width: 600px;
+    height: fit-content;
+    margin: 0 auto;
+    padding-top:20px;
+}
+.w-contvsfoot .d-form form > div:nth-child(1) {
+   
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+ 
+}
+.w-contvsfoot .d-form form > div:nth-child(1) input,
+.w-contvsfoot .d-form form > div:nth-child(2) textarea {
+    box-shadow:1px 1px 2px 1px rgba(36, 42, 53, 0.152);
+    color:#F7A7B4
+}
+.w-contvsfoot .d-form form > div:nth-child(1) input:focus,
+.w-contvsfoot .d-form form > div:nth-child(2) textarea:focus {
+    outline:none;
+}
+.w-contvsfoot .d-form form > div:nth-child(1) input {
+    box-sizing: border-box;
+    width: 48%;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 4px;
+    padding: 10px;
+/* Light / Elevation 200 */
+   
+    border: none;
+}
+
+.w-contvsfoot .d-form form > div:nth-child(2) textarea {
+    box-sizing: border-box;
+    width: 100%;
+  
+    display: block;
+    border-radius: 4px;
+    padding: 10px;
+    height:150px;
+ 
+    border: none;
+}
+
+.w-contvsfoot .d-form form > div:nth-child(3) button {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--color-primary);
+    color: white;
+    border:none;
+    font-size: 16px;
+    font-weight:bold;
+    font-family: "MontserratLight";
+    border-radius: 16px;
+    padding: 10px 0;
+    margin-top:30px;
+    
+} 
+.w-contvsfoot .d-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    height: fit-content;
+}
+.w-contvsfoot .d-footer * {
+    color: white;
+}
+.w-contvsfoot .d-footer > .item-footer:nth-child(n) ul {
+    padding-left: 17px;
+    list-style-type: circle;
+
+}
+.w-contvsfoot .d-footer > .item-footer:nth-child(1) ul li {
+
+    font-family: "MontserratLight";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.w-contvsfoot .d-footer > .item-footer:nth-child(2) ul li,
+.w-contvsfoot .d-footer > .item-footer:nth-child(3) ul li {
+
+    font-family: "MontserratLight";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px; /* 150% */
+}
+.w-contvsfoot .d-footer > .item-footer:nth-child(n) h3 {
+    font-family: "Swashington";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 133.333% */
+}
+.w-contvsfoot .d-footer > .item-footer:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    padding:0 20px;
+
+
+}
+.w-contvsfoot .d-footer > .item-footer:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 1;
+    padding:0 20px;
+}
+.w-contvsfoot .d-footer > .item-footer:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 1;
+    padding:0 20px;
+}
+.w-contvsfoot .d-footer > .legal {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+    padding:0 20px;
+}
+
+
+.slider-basescroll {
+    width: 100vw;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slider-basescroll div {
+    
+    position: relative;
+    width: 2000px;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 100%;
+    will-change: transform;
+}
+
+.slider-basescroll div img {
+    height: 100%;
+    width: auto;
+    display: block;
+    opacity: 0.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

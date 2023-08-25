@@ -1,0 +1,406 @@
+:root {
+    --color-primary: #D71F27;
+    --color-text: #495057;
+    --bg-pre: #D9D9D9;
+}
+
+@font-face {
+    font-family: "Swashington";
+    src: url("../../public/tuananh/fonts/SVN-Swashington.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MontserratLight";
+    src: url("../../public/tuananh/fonts/Montserrat-Light.ttf");
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.w-box,
+.w-gallery,
+.w-price {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+button,
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.replace-prop {
+    max-width: 1200px !important;
+}
+
+.replace-prop .d-box {
+    width: 33.3% !important;
+}
+
+.w-welcome {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+.d-welcome {
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding: 100px 0;
+    align-items: center;
+}
+.w-banner {
+    position: relative;
+    max-width: 100%;
+    height: fit-content;
+}
+.w-banner .img {
+    width: 100%;
+    height: fit-content;
+}
+.w-banner .img  img {
+    width: 100%;
+    height: auto;
+}
+.w-welcome .d-welcome>div:nth-child(1){
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+    z-index:99;
+}
+.w-welcome .d-welcome>div:nth-child(2) {
+    width: 420px;
+    overflow: hidden;
+    position: relative;
+}
+.patten-bg{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+}
+.patten-bg img {
+    width: 100%;
+    height: auto;
+}
+.w-welcome .d-welcome>div:nth-child(1) h3 {
+
+    font-family: "Swashington";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+
+    color: var(--color-primary);
+}
+
+.w-welcome .d-welcome>div:nth-child(1) p {
+    color: var(--color-text);
+
+    font-family: "MontserratLight";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.w-welcome .d-welcome>div:nth-child(2) {
+
+    box-sizing: border-box;
+    height: 72vh;
+    border-radius: 16px;
+}
+.w-welcome .d-welcome>div:nth-child(2) img {
+    width:100%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.only {
+    text-align: center;
+
+    font-family: 'Swashington';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:180%;
+
+    color: var(--color-primary);
+}
+
+.w-welcome .d-welcome>div:nth-child(1) .slogan {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.w-welcome .d-welcome>div:nth-child(1) .slogan span{
+    color: var(--color-text);
+
+    font-family: "Swashington";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 180%;
+
+}
+.w-welcome .d-welcome>div:nth-child(1) .slogan span:nth-child(n) {
+    width: fit-content;
+    display: block;
+}
+.w-welcome .d-welcome>div:nth-child(1) .slogan span:nth-child(1) {
+    align-self:flex-start;
+}
+.w-welcome .d-welcome>div:nth-child(1) .slogan span:nth-child(2) {
+    align-self: flex-end;
+}
+
+
+
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar > .menu-item ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar > .menu-item ul li button{
+    color: white;
+    font-family: "Swashington";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    margin: 0 20px;
+    background: unset;
+    border: unset;
+}
+.navbar .btn {
+    display: flex;
+    flex-direction: row;
+}
+.navbar .btn a {
+    display: flex;
+width: 72px;
+padding: 12px 16px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 360px;
+background: var(--color-primary);
+border:none;
+color:white;
+border: 1px solid rgb(81, 26, 26);
+font-family: "MontserratLight";
+margin-right:20px;
+}
+
+
+/* REPONSIVE */
+@media (max-width:1000px) {
+    .w-box .d-box h5 {
+        font-size: 22px !important;
+    }
+
+    .w-price .heading h2 {
+        font-size: 36px !important;
+    }
+    .w-welcome .d-welcome>div:nth-child(1) h3 {
+        padding-top: 20px !important;
+        font-size: 36px !important;
+    }
+    .w-welcome .d-welcome>div:nth-child(1) .slogan span {
+        font-size: 36px !important;
+    }
+    .w-welcome .d-welcome>div:nth-child(1) p{
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width:800px) {
+    .w-box .d-box h5 {
+        font-size: 25px !important;
+    }
+
+    .w-box .d-box {
+        width: 100% !important;
+    }
+
+    .w-price .detail .gr-option button {
+        font-size: 12px !important;
+        margin: 0 10px !important;
+    }
+    .w-welcome .d-welcome>div:nth-child(2) {
+        display: none !important;
+    }
+    .w-welcome .d-welcome>div:nth-child(1) {
+        width: 100% !important;
+        padding:  0 30px !important;
+    }
+    .w-welcome .d-welcome>div:nth-child(1) .slogan {
+        max-width: 420px !important;
+        margin: 0 auto;
+    }
+    .patten-bg {
+        width: 420px !important;
+        height:420px !important;
+    }
+    .only {
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 36px !important;
+    }
+    .d-welcome {
+        padding: 40px 0!important;
+    }
+}
+
+@media (max-width:567px) {
+    .w-price .heading h2 {
+        font-size: 20px !important;
+    }
+
+    .w-price .heading p {
+        font-size: 12px !important;
+        max-width: 70%;
+        margin: 20px auto;
+    }
+
+    .w-price .heading .underline {
+        width: 72vw !important;
+    }
+
+    .w-contvsfoot .d-form {
+        margin: 48px 24px !important;
+        padding: 24px !important;
+    }
+
+    .w-contvsfoot .d-form h2 {
+        font-size: 16px !important;
+    }
+
+    .w-contvsfoot .d-footer>.item-footer:nth-child(1) {
+        grid-column-start: 1 !important;
+        grid-column-end: 5 !important;
+        grid-row: 1 !important;
+        padding-left: 10px !important;
+    }
+
+    .w-contvsfoot .d-footer>.item-footer:nth-child(2) {
+        grid-column-start: 1 !important;
+        grid-column-end: 5 !important;
+        grid-row: 2 !important;
+        padding-left: 10px !important;
+    }
+
+    .w-contvsfoot .d-footer>.item-footer:nth-child(3) {
+        grid-column-start: 1 !important;
+        grid-column-end: 5 !important;
+        grid-row: 3 !important;
+        padding-left: 10px !important;
+    }
+
+    .w-contvsfoot .d-footer>.legal {
+        grid-column-start: 1 !important;
+        grid-column-end: 5 !important;
+        grid-row: 4 !important;
+        padding-left: 10px !important;
+        text-align: center !important;
+        font-weight: bold;
+        font-size: 10px !important;
+    }
+
+    .w-gallery {
+        display: none;
+    }
+
+    .w-contvsfoot .d-footer>.item-footer:nth-child(1) ul li {
+        font-size: 14px !important;
+        line-height: 130% !important;
+    }
+
+    .w-contvsfoot .d-footer>.item-footer:nth-child(2) ul li,
+    .w-contvsfoot .d-footer>.item-footer:nth-child(3) ul li {
+        font-size: 14px !important;
+        line-height: 130% !important;
+    }
+
+    .patten-flow>img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .patten-bg {
+        width: 360px !important;
+        height:360px !important;
+    }
+    .w-box .d-box .img {
+        height: 250px !important;
+    }
+    .mySwiper {
+        height: 420px !important;
+    }
+    .mySwiperNav .swiper-slide {
+        width:72px !important;
+    }
+    .mySwiper2 {
+        width: 100% !important;
+    }
+    .w-price .detail > button {
+        margin: 20px auto!important;
+    }
+    .menu-item {
+        display: none !important;
+    }
+    .mySwiperNav .swiper-slide > div {
+        font-size: 16px !important;
+    }
+
+    .mySwiperNav {
+        width: 100% !important;
+    }
+    .navbar {
+        padding: 0 10px !important;
+    }
+    .navbar .btn {
+        width: 60% !important;
+    }
+    .navbar .btn a {
+        font-size: 14px !important;
+        
+    }
+}
