@@ -1,7 +1,8 @@
+"use client"
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Image from 'next/image';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -64,19 +65,19 @@ export default function SliderPrice() {
                 className="mySwiper2"
             >
                 <SwiperSlide>
-                    <img src="/tuananh/banh-le.png" />
+                    <Image src="/tuananh/banh-le.png" alt='' width={1000} height={800}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/tuananh/chiet-khau.png" />
+                    <Image src="/tuananh/chiet-khau.png"width={1000} height={800}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/tuananh/combo-list-1.png" />
+                    <Image src="/tuananh/combo-list-1.png" width={1000} height={800}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/tuananh/combo-list-2.png" />
+                    <Image src="/tuananh/combo-list-2.png"width={1000} height={800}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/tuananh/combo-list-3.png" />
+                    <Image src="/tuananh/combo-list-3.png" width={1000} height={800}/>
                 </SwiperSlide>
 
             </Swiper>
